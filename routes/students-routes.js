@@ -5,6 +5,7 @@ const studentsControllers = require('../controllers/students-controller');
 const router = express.Router();
 
 router.post('/',
+    //Using if we need to check entry data
     // [
     //     check('firstName', 'Please enter a valid first name').not().isEmpty().trim(),
     //     check('lastName', 'Please enter a valid last name').not().isEmpty().trim(),
