@@ -20,6 +20,7 @@ const addData = async ( req, res ) => {
         });
     }
 
+    //Read uploaded file 
     fs.readFile(`./resources/${fileName}`, (err, data) => {
         if(err) {
             throw err;
@@ -64,6 +65,7 @@ const addData = async ( req, res ) => {
     });
 }
 
+//Bulk update
 const updateData = async ( req, res ) => {
     const { minGrade, firstName } = req.body; 
     try{
