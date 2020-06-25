@@ -24,6 +24,7 @@ const addData = async ( req, res ) => {
         if(err) {
             throw err;
         }
+        //Split entry by new line and by comma after
         const array = data.toString().split("\n").map(item => item.trim());
         for(i in array) {
             const line = array[i].split(',').map(e => e.trim());
