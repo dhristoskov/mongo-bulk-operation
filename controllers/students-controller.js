@@ -49,6 +49,7 @@ const addData = async ( req, res ) => {
                 bulk.insert(el);
                 studentsCounter--
 
+                //Useing if we have more then 1000 entries
                 // if(studentsCounter % 1000 === 0){
                 //     bulk.execute()
                 //     bulk = Student.collection.initializeOrderedBulkOp();
